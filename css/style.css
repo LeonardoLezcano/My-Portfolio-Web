@@ -1,9 +1,10 @@
 .header {
   display: flex;
   flex-direction: row;
-  background-color: antiquewhite;
-  border: 2px solid black;
   height: 5em;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
 }
 
 .nav {
@@ -14,7 +15,7 @@
   background-color: antiquewhite;
   width: 5em;
   height: 5em;
-  border: 2px solid blue;
+
   z-index: 100;
 }
 
@@ -36,23 +37,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333;
 }
-
+.icon_burger {
+  color: #ffd700;
+}
 .container__quote {
-  margin: 0 auto;
-  background-color: antiquewhite;
   margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 34.6em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+}
+.quote {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
 }
 
 /* ----------------------------------------------------------------HERO SECTION START */
 .hero {
   height: 100vh;
-  background-color: tomato;
+  background-image: url(/images/background-home.png);
   display: flex;
 }
 
 .banner {
-  background-color: blueviolet;
   height: 45em;
   width: 100%;
   margin: 0 10em;
@@ -60,43 +82,102 @@
 }
 
 .banner__container-all {
-  background-color: antiquewhite;
+  background-image: url(/images/keyword-black.jpg);
+  background-size: cover;
   height: 40em;
   margin: 0 2em;
   display: flex;
   flex-direction: row;
+  border-radius: 2em;
+  color: #fff;
 }
 .banner__container-left {
   width: 50%;
-  border: 2px solid blue;
   position: relative;
 }
 
-.banner__bottom-cv {
-  position: absolute;
-  bottom: -10px;
+.banner__h1 {
+  color: #fff;
+}
+.banner__h2 {
+  text-align: center;
 }
 
 .banner__container-right {
   width: 50%;
-  border: 2px solid blue;
   position: relative;
 }
 .banner__img {
   position: absolute;
   bottom: -40px;
-  border: 2px solid black;
   margin: 0 12em;
   height: 40em;
   width: 25em;
-  background-color: blue;
+  background-image: url(/images/profile.png);
 }
+
+/* SCROLL DOWN START=============================== */
 .banner__bottom-scroll {
   position: absolute;
-  bottom: 80px;
-  right: -55px;
+  bottom: 150px;
+  right: -90px;
   transform: rotate(90deg);
   pointer-events: none;
+}
+
+.banner__bottom-scroll {
+  font-size: 1.5em;
+  background-color: white;
+  color: black;
+  width: 45px;
+  height: 45px;
+  opacity: 0.75;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: bounce_513 1s infinite;
+}
+
+@keyframes bounce_513 {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* SCROLL DOWN END=============================== */
+
+.banner__bottom-cv {
+  position: absolute;
+  left: 90px;
+  bottom: -10px;
+}
+
+.btn {
+  font-size: 1em;
+  width: 12em;
+  height: 3em;
+  background-color: #ffd700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  font-size: 1em;
+  width: 12em;
+  height: 3em;
+  border-radius: 10px;
+  background-color: #333;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 /* ----------------------------------------------------------------HERO SECTION END */
@@ -129,7 +210,6 @@
 }
 
 .about__container-img {
-  background-color: blue;
   height: 30em;
   margin: 2em 10em;
 }
