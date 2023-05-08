@@ -83,26 +83,69 @@
     </section>
     <!-- /* ----------------------------------------------------------------ABOUT SECTION END */ -->
 
-    <!-- /* ----------------------------------------------------------------WORK SECTION START */ -->
-    <section id="#work" class="work">WORK</section>
-    <!-- /* ----------------------------------------------------------------WORK SECTION END */ -->
-
     <!-- /* ----------------------------------------------------------------SKILLS SECTION START */ -->
     <section id="#skills" class="skills">
       <div class="skills__container">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
+        <div class="skills__title-container">
+          <h2 class="skills__title">Stack</h2>
+        </div>
+        <div class="skills__boxicon-container">
+          <img class="skills__boxicon" src="/images/sass.svg" alt="" />
+          <img class="skills__boxicon" src="/images/bootstrap.svg" alt="" />
+          <img class="skills__boxicon" src="/images/javascript.svg" alt="" />
+          <img class="skills__boxicon" src="/images/nodejs.svg" alt="" />
+          <img class="skills__boxicon" src="/images/typescript.svg" alt="" />
+          <img class="skills__boxicon" src="/images/react.svg" alt="" />
+          <img class="skills__boxicon" src="/images/firebase.svg" alt="" />
+          <img class="skills__boxicon" src="/images/git.svg" alt="" />
+        </div>
       </div>
     </section>
     <!-- /* ----------------------------------------------------------------SKILLS SECTION END */ -->
+
+    <!-- /* ----------------------------------------------------------------WORK SECTION START */ -->
+    <section id="#work" class="work__section">
+      <div class="work">
+        <h2 class="work__title">work</h2>
+        <p class="work__paragraph">take a look at my projects</p>
+        <div class="work__grid">
+          <div class="work__projects">project 1</div>
+          <div class="work__projects">project 2</div>
+          <div class="work__projects">project 3</div>
+          <div class="work__projects">project 4</div>
+          <div class="work__projects">project 5</div>
+          <div class="work__projects">project 6</div>
+        </div>
+      </div>
+    </section>
+    <!-- /* ----------------------------------------------------------------WORK SECTION END */ -->
+
+    <!-- /* ----------------------------------------------------------------CONTACT SECTION START */ -->
+    <section id="contact">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..." />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email..."
+          />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message here..."
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- /* ----------------------------------------------------------------CONTACT SECTION END */ -->
+
     <footer class="footer"></footer>
   </body>
 </html>
