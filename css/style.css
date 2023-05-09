@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -9,31 +13,55 @@
 
 .nav {
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 190px;
-  height: 120px;
-  padding: 0.5rem;
+  height: 90px;
+  width: 250px;
   background: rgba(198, 198, 198, 0.34);
   border-radius: 8px;
-  backdrop-filter: blur(5px);
   border-bottom: 3px solid rgba(255, 255, 255, 0.44);
   border-left: 2px rgba(255, 255, 255, 0.545) outset;
-  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.28);
+  flex-direction: column;
   transform: skewX(10deg);
   transition: 0.4s;
-  overflow: hidden;
-  color: white;
+  color: #fff;
   z-index: 100;
   margin-top: 2%;
   margin-left: 1%;
+  overflow: hidden;
+  padding-top: 30px;
 }
 
 .nav:hover {
-  height: 254px;
+  width: 300px;
+  height: 400px;
   transform: skew(0deg);
+  background-color: #333;
+  transition: 0.3s;
 }
+
+.nav__icon {
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  width: 100%;
+}
+.nav__btn {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav__container-btn {
+  margin-top: 22px;
+  height: 18em;
+  justify-content: space-between;
+}
+
+.separador {
+  margin-bottom: 20px;
+}
+
 /* SOCIAL ICONS START================================== */
 .container__icon {
   position: fixed;
@@ -54,7 +82,7 @@
   backdrop-filter: blur(5px);
   border-bottom: 3px solid rgba(255, 255, 255, 0.44);
   border-left: 2px rgba(255, 255, 255, 0.545) outset;
-  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.28);
+
   border-radius: 8px;
   z-index: 100;
 }
@@ -128,17 +156,7 @@
 }
 
 /* SOCIAL ICONS END================================== */
-.nav__icon {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-}
-.icon_burger {
-  color: #ffd700;
-}
+
 .container__quote {
   margin: auto;
   background-color: #fff;
