@@ -1,6 +1,4 @@
-* {
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 .header {
   display: flex;
@@ -60,6 +58,41 @@
 
 .separador {
   margin-bottom: 20px;
+}
+
+.a_section {
+  color: #e1e1e1;
+  position: relative;
+  border: none;
+  background: none;
+
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+.a_section:focus,
+.a_section:hover {
+  color: #ffd700;
+}
+
+.a_section:focus:after,
+.a_section:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.a_section:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffd700;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }
 
 /* SOCIAL ICONS START================================== */
@@ -185,13 +218,7 @@
 /* ----------------------------------------------------------------HERO SECTION START */
 .hero {
   height: 100vh;
-  /* background-image: linear-gradient(
-    to top,
-    #1e3c72 0%,
-    #1e3c72 1%,
-    #2a5298 100%
-  ); */
-  background-color: #17181d;
+  background-image: url(/images/background6.webp);
   display: flex;
 }
 
@@ -228,13 +255,20 @@
   width: 50%;
   position: relative;
 }
+
+.hello {
+  position: relative;
+  font-size: 3em;
+  right: -25%;
+  top: -2%;
+}
 .banner__img {
   position: absolute;
   bottom: -80px;
   margin: 0 12em;
   height: 40em;
   width: 25em;
-  background-image: url(/images/profile.png);
+  background-image: url(/images/profile.webp);
   filter: grayscale(100);
 }
 

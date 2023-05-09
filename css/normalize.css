@@ -11,6 +11,8 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Sections
@@ -63,7 +65,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: "Poppins", sans-serif; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -74,8 +76,13 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 
+li {
+  list-style: none;
+}
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: white;
 }
 
 /**
