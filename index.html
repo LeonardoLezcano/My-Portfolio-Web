@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script
       src="https://kit.fontawesome.com/c27feecd75.js"
       crossorigin="anonymous"
@@ -37,24 +38,23 @@
 
       <div class="container__quote">
         <label class="quote">
-          "The programmers of tomorrow are the wizards of the future" Gabe
-          Newell
+          "The programmers of tomorrow are the wizards of the future"<span>-Gabe
+            Newell</span> 
         </label>
       </div>
 
       <div class="container__icon">
         <div class="icons">
-          <a href="#" class="icon icon--linkedin">
+          <a href="https://www.linkedin.com/in/leonardo-lezcano-3a729ab7/" class="icon icon--linkedin">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="#" class="icon icon--instagram">
+          <a href="https://www.instagram.com/leonardo_lezca/" class="icon icon--instagram">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="#" class="icon icon--github
-          ">
+          <a href="https://github.com/LeonardoLezcano" class="icon icon--github">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="#" class="icon icon--whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=5491122802632" class="icon icon--whatsapp">
             <i class="fa-brands fa-whatsapp"></i>
           </a>
         </div>
@@ -66,11 +66,29 @@
         <div class="banner__container-all">
           <div class="banner__container-left">
             <h1 class="banner__h1">Leonardo Lezcano</h1>
-            <h2 class="banner__h2">Front End Developer</h2>
-            <button class="btn banner__bottom-cv">Download CV</button>
+            <h2 class="banner__h2">Front End <span>Dev</span>eloper</h2>
+            <div class="banner__skills">
+              <img class="banner__skills-icon-javascript" src="images/javascript.svg" alt="">
+              <img class="banner__skills-icon" src="images/react.svg" alt="">
+              <img class="banner__skills-icon" src="/images/typescript.svg" alt="">
+              <img class="banner__skills-icon" src="images/sass.svg" alt="">
+              <img class="banner__skills-icon" src="images/bootstrap.svg" alt="">
+              <img class="banner__skills-icon" src="images/tailwind.svg" alt="">
+              <img class="banner__skills-icon" src="images/jquery.svg" alt="">
+              <img class="banner__skills-icon" src="images/firebase.svg" alt="">
+            </div>
+
+            <div class="banner__skills">
+              <img class="banner__skills-icon" src="images/jquery.svg" alt="">
+              <img class="banner__skills-icon" src="images/firebase.svg" alt="">
+              <img class="banner__skills-icon" src="images/nodejs.svg" alt="">
+              <img class="banner__skills-icon" src="images/git.svg" alt="">
+            </div>
+
+            <a class="btn-download" download="Leonardo-Lezcano-CV" href="/files/Leonardo Lezcano.pdf"><button class="btn banner__bottom-cv">Download CV</button></a>
           </div>
           <div class="banner__container-right">
-            <h2 class="hello">Hello!</h2>
+            <h2 class="hello"><span>H</span>ello!</h2>
             <img class="banner__img" />
             <button class="btn_dark banner__bottom-scroll">↓</button>
           </div>
@@ -85,8 +103,9 @@
         <div class="about__container">
           <div class="about__image">
             <div class="about__container-img">
-              <img src="" alt="image-profile" />
+              <img src="" alt="" />
             </div>
+            
           </div>
           <article class="about__article">
             <h2 class="about__title">About Me</h2>
@@ -113,26 +132,6 @@
     </section>
     <!-- /* ----------------------------------------------------------------ABOUT SECTION END */ -->
 
-    <!-- /* ----------------------------------------------------------------SKILLS SECTION START */ -->
-    <section  class="skills">
-      <div class="skills__container">
-        <div class="skills__title-container">
-          <h2 class="skills__title">Stack</h2>
-        </div>
-        <div class="skills__boxicon-container">
-          <img class="skills__boxicon" src="/images/sass.svg" alt="" />
-          <img class="skills__boxicon" src="/images/bootstrap.svg" alt="" />
-          <img class="skills__boxicon" src="/images/javascript.svg" alt="" />
-          <img class="skills__boxicon" src="/images/nodejs.svg" alt="" />
-          <img class="skills__boxicon" src="/images/typescript.svg" alt="" />
-          <img class="skills__boxicon" src="/images/react.svg" alt="" />
-          <img class="skills__boxicon" src="/images/firebase.svg" alt="" />
-          <img class="skills__boxicon" src="/images/git.svg" alt="" />
-        </div>
-      </div>
-    </section>
-    <!-- /* ----------------------------------------------------------------SKILLS SECTION END */ -->
-
     <!-- /* ----------------------------------------------------------------WORK SECTION START */ -->
     <section id="work" class="work__section">
       <div class="work">
@@ -151,27 +150,10 @@
     <!-- /* ----------------------------------------------------------------WORK SECTION END */ -->
 
     <!-- /* ----------------------------------------------------------------CONTACT SECTION START */ -->
-    <section id="#contact">
+    <section id="#contact" class="contact__section">
       <div class="container">
         <h1>Contact Me</h1>
-        <form action="#" method="post">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name..." />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email..."
-          />
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Type your message here..."
-          ></textarea>
-          <button class="btn" type="submit">Send Message</button>
-        </form>
+        
       </div>
     </section>
     <!-- /* ----------------------------------------------------------------CONTACT SECTION END */ -->

@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 .header {
   display: flex;
@@ -65,7 +67,6 @@
   position: relative;
   border: none;
   background: none;
-
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color;
@@ -194,7 +195,7 @@
   margin: auto;
   background-color: #fff;
   border-radius: 10px;
-  width: 34.6em;
+  width: 39.9 em;
   height: 2.5em;
   display: flex;
   align-items: center;
@@ -215,10 +216,14 @@
   box-shadow: 0 2px 0 2px #000;
 }
 
+.quote span {
+  color: #333;
+}
+
 /* ----------------------------------------------------------------HERO SECTION START */
 .hero {
   height: 100vh;
-  background-image: url(/images/background6.webp);
+  background-image: url(/images/background-home.webp);
   display: flex;
 }
 
@@ -243,6 +248,15 @@
   width: 50%;
   position: relative;
 }
+.banner__skills {
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  margin-top: 6em;
+}
+.banner__skills-icon {
+  height: 5em;
+}
 
 .banner__h1 {
   color: #fff;
@@ -251,16 +265,27 @@
   text-align: center;
 }
 
+.banner__h2 span {
+  color: #ffd700;
+}
+
 .banner__container-right {
   width: 50%;
   position: relative;
 }
 
 .hello {
+  text-align: center;
   position: relative;
+  left: -5%;
   font-size: 3em;
-  right: -25%;
+  /* right: -25.5%; */
   top: -2%;
+  font-family: "Press Start 2P", cursive;
+}
+
+.hello span {
+  color: #ecd448;
 }
 .banner__img {
   position: absolute;
@@ -280,12 +305,12 @@
   transform: rotate(90deg);
   pointer-events: none;
   font-size: 1.5em;
-  background-color: white;
+  background-color: #ffd700;
   color: black;
   width: 45px;
   height: 45px;
   opacity: 0.75;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 8px;
   cursor: pointer;
   animation: bounce_513 1s infinite;
@@ -339,20 +364,18 @@
 /* ----------------------------------------------------------------ABOUT SECTION START */
 .about__section {
   height: 100vh;
-  background-color: steelblue;
+  background-image: url(/images/background.webp);
   display: flex;
 }
 
 .about {
   display: flex;
-  background-color: blueviolet;
   height: 42em;
   width: 100%;
   margin: 0 10em;
   margin-top: 5em;
 }
 .about__container {
-  background-color: antiquewhite;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -365,56 +388,28 @@
 
 .about__container-img {
   height: 30em;
-  margin: 2em 10em;
+  margin: 4.2em 10em;
+  background-image: url(/images/about-img-profile.webp);
+  background-size: cover;
+  filter: grayscale(1);
+  border: 2px solid black;
 }
 
 .about__article {
   width: 50%;
+  /* background-color: #333; */
+  color: white;
 }
+
 .about__title {
   text-align: center;
 }
 .about__parrafo {
-  margin: 0 8em;
-  height: 20em;
+  font-size: 1.4em;
+  margin: 0 4em;
+  height: 26em;
 }
 /* ----------------------------------------------------------------ABOUT SECTION END */
-
-/* ----------------------------------------------------------------SKILLS SECTION START */
-.skills {
-  height: 30vh;
-  background-color: gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0%;
-}
-.skills__container {
-  display: flex;
-  width: 80%;
-  height: 80%;
-  flex-direction: column;
-}
-.skills__title-container {
-  height: 30%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.skills__boxicon-container {
-  background-color: black;
-  color: aliceblue;
-  width: 100%;
-  height: 10em;
-  display: flex;
-  justify-content: center;
-}
-
-.skills__boxicon {
-  width: 6em;
-}
-/* ----------------------------------------------------------------SKILLS SECTION END */
 
 /* ----------------------------------------------------------------WORK SECTION START */
 .work {
@@ -423,7 +418,8 @@
   justify-content: start;
   align-items: center;
   height: 100vh;
-  background-color: cornflowerblue;
+  background-image: url(/images/background.webp);
+  color: white;
 }
 
 .work__grid {
@@ -434,7 +430,7 @@
 }
 
 .work__projects {
-  background-color: aquamarine;
+  background-color: #333;
   width: 22em;
   height: 22em;
 }
@@ -442,9 +438,9 @@
 /* ----------------------------------------------------------------WORK SECTION END */
 
 /* ----------------------------------------------------------------CONTACT SECTION START */
-#contact {
+.contact__section {
   color: white;
-  background-color: #333;
+  background-image: url(/images/background.webp);
   padding: 50px 0;
 }
 
