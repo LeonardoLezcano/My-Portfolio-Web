@@ -5,10 +5,8 @@
 .header {
   display: flex;
   flex-direction: row;
-  height: 5em;
   width: 100%;
   background-color: transparent;
-  position: absolute;
 }
 
 .nav {
@@ -34,16 +32,48 @@
   width: 300px;
   height: 400px;
   transform: skew(0deg);
-  background-color: #333;
   transition: 0.3s;
 }
-
-.nav__icon {
+.container__menu-icon {
+  width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 4em;
-  width: 100%;
 }
+.nav__icon {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 4rem;
+  padding-top: 1em;
+  border: 0;
+  background: transparent;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.nav__icon > div {
+  background: white;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+
+.nav:hover .nav__icon div:first-child {
+  transform: rotate(45deg);
+  background: #ffc500;
+}
+
+.nav:hover .nav__icon div:nth-child(2) {
+  opacity: 0;
+}
+
+.nav:hover .nav__icon div:last-child {
+  transform: rotate(-45deg);
+  background: #ffc500;
+}
+
 .nav__btn {
   display: flex;
   justify-content: center;
@@ -147,15 +177,13 @@
   animation: shake 0.25s;
 }
 .icon--instagram:hover {
-  background-image: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
+  background-image: linear-gradient(
+    to right,
+    #c21500 0%,
+    #ffc500 51%,
+    #c21500 100%
   );
-  outline-color: #a02d76;
+  outline-color: #c21500;
 }
 .icon--github:hover {
   background-image: linear-gradient(
@@ -191,40 +219,21 @@
 
 /* SOCIAL ICONS END================================== */
 
-.container__quote {
-  margin: auto;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 39.9 em;
-  height: 2.5em;
+/* ----------------------------------------------------------------HERO SECTION START */
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+/* ----------------------------------------------------------------HERO SECTION END */
+
+/* ----------------------------------------------------------------ABOUT SECTION START */
+.about__section {
+  height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   display: flex;
   align-items: center;
-  border: 2px solid black;
-}
-.quote {
-  padding: 1.1em 2em;
-  background: none;
-  border: 2px solid #fff;
-  font-size: 15px;
-  color: #131313;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s;
-  border-radius: 12px;
-  background-color: #ecd448;
-  font-weight: bolder;
-  box-shadow: 0 2px 0 2px #000;
-}
-
-.quote span {
-  color: #333;
-}
-
-/* ----------------------------------------------------------------HERO SECTION START */
-.hero {
-  height: 100vh;
-  background-image: url(/images/background-home.webp);
-  display: flex;
 }
 
 .banner {
@@ -241,7 +250,7 @@
   margin: 0 2em;
   display: flex;
   flex-direction: row;
-  border-radius: 2em;
+  border-radius: 1em;
   color: #fff;
 }
 .banner__container-left {
@@ -252,17 +261,18 @@
   height: 5em;
   display: flex;
   justify-content: center;
-  margin-top: 6em;
 }
 .banner__skills-icon {
-  height: 5em;
+  height: 4em;
 }
 
 .banner__h1 {
   color: #fff;
+  font-size: 3em;
 }
 .banner__h2 {
-  text-align: center;
+  font-size: 2em;
+  margin-left: 4.8em;
 }
 
 .banner__h2 span {
@@ -294,42 +304,8 @@
   height: 40em;
   width: 25em;
   background-image: url(/images/profile.webp);
-  filter: grayscale(100);
+  filter: grayscale(1);
 }
-
-/* SCROLL DOWN START=============================== */
-.banner__bottom-scroll {
-  position: absolute;
-  bottom: 150px;
-  right: -90px;
-  transform: rotate(90deg);
-  pointer-events: none;
-  font-size: 1.5em;
-  background-color: #ffd700;
-  color: black;
-  width: 45px;
-  height: 45px;
-  opacity: 0.75;
-  border: 2px solid black;
-  border-radius: 8px;
-  cursor: pointer;
-  animation: bounce_513 1s infinite;
-}
-
-@keyframes bounce_513 {
-  0%,
-  100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-
-/* SCROLL DOWN END=============================== */
 
 .banner__bottom-cv {
   position: absolute;
@@ -358,57 +334,6 @@
   cursor: pointer;
   transition: 0.5s;
 }
-
-/* ----------------------------------------------------------------HERO SECTION END */
-
-/* ----------------------------------------------------------------ABOUT SECTION START */
-.about__section {
-  height: 100vh;
-  background-image: url(/images/background.webp);
-  display: flex;
-}
-
-.about {
-  display: flex;
-  height: 42em;
-  width: 100%;
-  margin: 0 10em;
-  margin-top: 5em;
-}
-.about__container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0 2em;
-}
-
-.about__image {
-  width: 50%;
-}
-
-.about__container-img {
-  height: 30em;
-  margin: 4.2em 10em;
-  background-image: url(/images/about-img-profile.webp);
-  background-size: cover;
-  filter: grayscale(1);
-  border: 2px solid black;
-}
-
-.about__article {
-  width: 50%;
-  /* background-color: #333; */
-  color: white;
-}
-
-.about__title {
-  text-align: center;
-}
-.about__parrafo {
-  font-size: 1.4em;
-  margin: 0 4em;
-  height: 26em;
-}
 /* ----------------------------------------------------------------ABOUT SECTION END */
 
 /* ----------------------------------------------------------------WORK SECTION START */
@@ -418,21 +343,8 @@
   justify-content: start;
   align-items: center;
   height: 100vh;
-  background-image: url(/images/background.webp);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: white;
-}
-
-.work__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-column-gap: 2em;
-  grid-row-gap: 2em;
-}
-
-.work__projects {
-  background-color: #333;
-  width: 22em;
-  height: 22em;
 }
 
 /* ----------------------------------------------------------------WORK SECTION END */
@@ -440,7 +352,7 @@
 /* ----------------------------------------------------------------CONTACT SECTION START */
 .contact__section {
   color: white;
-  background-image: url(/images/background.webp);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   padding: 50px 0;
 }
 
