@@ -27,7 +27,15 @@ body {
   margin: 0;
   text-decoration: none;
 }
-
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+  /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  background-color: gold; /* creates padding around scroll thumb */
+}
 /**
  * Render the `main` element consistently in IE.
  */
