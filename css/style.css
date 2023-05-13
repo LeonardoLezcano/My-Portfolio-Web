@@ -226,15 +226,64 @@
   width: 100vw;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
-.contenedor-home {
-  height: 110vh;
+.home__contenedor {
+  height: 100vh;
   width: 100vw;
-  background-image: url(/images/presentation2.png);
-  background-size: cover;
+  display: flex;
+  flex-direction: row;
 }
+
+.contenedor__left {
+  background-color: #0077b5;
+  height: 100vh;
+  width: 30vw;
+}
+.contenedor__center {
+  height: 100vh;
+  width: 40vw;
+  margin: 4% 0;
+}
+
+.contenedor__name {
+  position: relative;
+  top: -15%;
+  text-align: center;
+}
+
+.home__contenedor-img {
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+}
+.home__img {
+  height: 350px;
+  width: 350px;
+  border-radius: 200px;
+}
+.home__title {
+  color: #e1e1e1;
+  font-size: 5.5em;
+}
+.home__subtitle {
+  color: #e1e1e1;
+}
+.home__contenedor-icons {
+  width: 40vw;
+  height: 5em;
+}
+
+.home__contenedor-icons img {
+  height: 5em;
+}
+
+.contenedor__right {
+  background-color: #3e8e41;
+  height: 100vh;
+  width: 30vw;
+}
+
 /* ----------------------------------------------------------------HERO SECTION END */
 
 /* ----------------------------------------------------------------ABOUT SECTION START */
