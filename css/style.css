@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
@@ -339,7 +339,7 @@
   width: 30vw;
   height: 50vh;
   animation: fadeInLeft;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 .detail__white {
   margin-top: 1em;
@@ -351,7 +351,7 @@
   width: 30vw;
   height: 35vh;
   animation: fadeInLeft;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 .detail__yellow {
   margin-top: 1em;
@@ -420,23 +420,23 @@
   width: 30vw;
   background-color: #e1e1e1;
   animation: fadeInRight;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 .right__container-yellow {
   position: relative;
   margin-right: 10em;
   width: 38.5vw;
-  height: 50vh;
+  height: 80%;
   display: flex;
   align-items: end;
   right: 35%;
   animation: fadeInRight;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 .right__vector-yellow {
   margin-top: 2em;
   height: 5px;
-  width: 38.5vw;
+  width: 100%;
   background-color: #ffc500;
 }
 
@@ -483,6 +483,27 @@
 .banner__h1 {
   color: #fff;
   font-size: 3em;
+}
+.banner__container-p {
+  position: absolute;
+  height: 5px;
+  width: 65em;
+  left: -10%;
+  background-color: #ffc500;
+  border-radius: 10px;
+}
+.banner__p {
+  font-size: 1.7em;
+  margin-top: 2em;
+  margin-left: 1em;
+  height: 15em;
+  word-spacing: 10px;
+  line-height: 1.5;
+  backdrop-filter: blur(5px);
+}
+
+.banner__p span {
+  color: #ffc500;
 }
 .banner__h2 {
   font-size: 2em;
